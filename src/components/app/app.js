@@ -7,6 +7,11 @@ import './app.css';
 
 
 function App() {
+    const data = [
+        {name: "John C.", salary: 800, increase: false},
+        {name: "Oleh B.", salary: 3000, increase: true},
+        {name: "Anna Sh.", salary: 5000, increase: false},
+    ];
     return (
         <div className="app">
             <AppInfo />
@@ -16,7 +21,7 @@ function App() {
                 <AppFilter />
             </div>
 
-            <EmployeesList />
+            <EmployeesList data={data} />
 
             <EmployeesAddForm />
         </div>
